@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "predeploy": "vite build --base=/tp-react-blog/",
+    "predeploy": "vite build --base=./",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
