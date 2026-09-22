@@ -4,6 +4,15 @@ body {
   background-color: #f8f9fa;
 }
 
+/* Lien "Accueil" vraiment centré dans la navbar (sur grand écran) */
+@media (min-width: 992px) {
+  .nav-centre {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 /* En-tête */
 .header-blog {
   background: linear-gradient(135deg, #212529, #495057);
