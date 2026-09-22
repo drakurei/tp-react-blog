@@ -2,6 +2,8 @@
 
 Petit blog réalisé en React dans le cadre du cours. Les articles sont stockés dans un fichier JS et affichés dynamiquement, avec une barre de recherche pour les filtrer.
 
+**Démo en ligne :** https://drakurei.github.io/tp-react-blog/
+
 ## Fonctionnalités
 
 - Affichage des articles à partir d'un fichier de données (`src/data/articles.js`)
@@ -26,6 +28,14 @@ npm run dev
 ```
 
 Puis ouvrir http://localhost:5173
+
+## Déployer sur GitHub Pages
+
+```bash
+npm run deploy
+```
+
+Le script construit le site puis le publie sur la branche `gh-pages`. Il est ensuite accessible sur https://drakurei.github.io/tp-react-blog/
 
 ## Structure
 
