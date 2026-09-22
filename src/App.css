@@ -1,0 +1,51 @@
+/* Styles perso du blog (en complément de Bootstrap) */
+
+body {
+  background-color: #f8f9fa;
+}
+
+/* En-tête */
+.header-blog {
+  background: linear-gradient(135deg, #212529, #495057);
+  color: #fff;
+}
+
+.header-blog .lead {
+  color: #ced4da;
+}
+
+/* Cartes d'articles */
+.card-article {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-article .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Le texte de l'article est coupé à 3 lignes */
+.texte-article {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Badges cliquables (catégorie et mots-clés) */
+.badge-filtre {
+  border: none;
+  cursor: pointer;
+}
+
+.badge-filtre:hover {
+  opacity: 0.8;
+}
