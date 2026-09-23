@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import IconHeart from './IconHeart'
 
 // Carte d'un article
 // onCategorie / onMotCle = fonctions appelées quand on clique sur un badge
 function Article({ article, onCategorie, onMotCle }) {
   // est-ce que le texte complet est affiché ?
   const [ouvert, setOuvert] = useState(false)
+  // est-ce que l'utilisateur a aimé l'article ?
+  const [aime, setAime] = useState(false)
 
   return (
     <div className="col">
@@ -35,17 +38,28 @@ function Article({ article, onCategorie, onMotCle }) {
           </button>
         </div>
 
-        <div className="card-footer bg-transparent border-0 pb-3">
-          {article.motsCles.map((mot) => (
-            <button
-              key={mot}
-              type="button"
-              className="badge text-bg-light badge-filtre me-1"
-              onClick={() => onMotCle(mot)}
-            >
-              #{mot}
-            </button>
-          ))}
+        <div className="card-footer bg-transparent border-0 pb-3 d-flex justify-content-between align-items-center gap-2">
+          <div className="d-flex flex-wrap gap-1">
+            {article.motsCles.map((mot) => (
+              <button
+                key={mot}
+                type="button"
+                className="badge text-bg-light badge-filtre"
+                onClick={() => onMotCle(mot)}
+              >
+                #{mot}
+              </button>
+            ))}
+          </div>
+
+          {/* le bouton change de couleur et d'icône quand on aime l'article */}
+          <button
+            type="button"
+            className={aime ? 'btn btn-sm btn-danger' : 'btn btn-sm btn-outline-danger'}
+            onClick={() => setAime(!aime)}
+          >
+            <IconHeart plein={aime} /> {aime ? 'Aimé' : "J'aime"}
+          </button>
         </div>
       </div>
     </div>
