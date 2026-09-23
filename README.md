@@ -47,7 +47,8 @@ src/
 │   ├── SearchBar.jsx      # barre de recherche
 │   ├── CategoryFilter.jsx # boutons de filtre par catégorie
 │   ├── Article.jsx        # carte d'un article (avec "Lire la suite")
-│   ├── Icons.jsx          # icônes SVG
+│   ├── IconSearch.jsx     # icône loupe (SVG)
+│   ├── IconFrown.jsx      # icône "aucun résultat" (SVG)
 │   └── Footer.jsx         # pied de page
 ├── data/
 │   └── articles.js        # les articles du blog

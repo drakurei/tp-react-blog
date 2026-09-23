@@ -1,4 +1,4 @@
-import { IconSearch } from './Icons'
+import IconSearch from './IconSearch'
 
 // Barre de recherche
 // valeur = le texte tapé, onChange = la fonction qui met à jour la recherche
